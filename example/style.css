@@ -1,0 +1,16 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+.test {
+  width: 200px;
+  height: 200px;
+
+  background-image: paint(test-runner);
+  --lilith-test-color: #ddd;
+}
