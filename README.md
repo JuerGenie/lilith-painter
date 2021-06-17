@@ -22,7 +22,7 @@ So, It's LILITH-PAINTER, declare Houdini APIs' type (in file `src/houdini.d.ts`)
 
 
 
-### HOW TO USE?
+### HOW
 
 #### FOR USER
 
