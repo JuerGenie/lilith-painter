@@ -12,6 +12,7 @@ export default defineConfig({
   server: {
     port: 4000,
     proxy: {
+      // rewrite js request to ts request, for vite.
       "^((/src)|(/example))/.*\\.js(\\?.*)?": {
         target: "http://localhost:4000",
         rewrite(path) {
@@ -29,6 +30,7 @@ export default defineConfig({
     sourcemap: true,
   },
   plugins: [
+    // generate type definitions file.
     dts({
       compilerOptions: {
         noEmit: false,
@@ -43,6 +45,7 @@ export default defineConfig({
         }
       },
     }),
+    // copy global scope type definitions file.
     dfc(),
   ],
 });

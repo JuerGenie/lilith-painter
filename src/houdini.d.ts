@@ -108,3 +108,15 @@ type ReadonlyPropertyMap<
   has(key: K): boolean;
   size: number;
 };
+
+declare interface StylePropertyMap {
+  size: number;
+  append(property: string, value: string | CSSProperty): void;
+  clear(): void;
+  delete(property: string): void;
+  set(property: string, value: string | CSSProperty): void;
+}
+
+declare interface HTMLElement {
+  attributeStyleMap: StylePropertyMap;
+}
