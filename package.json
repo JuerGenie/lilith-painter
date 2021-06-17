@@ -1,6 +1,6 @@
 {
   "name": "lilith-painter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "Apache-2.0",
   "author": {
     "name": "Juergenie Whang",
@@ -8,8 +8,8 @@
     "email": "juergenie@qq.com"
   },
   "description": "Easy-utils for Paint API (Houdini APIs).",
-  "main": "dist/painter.umd.js",
-  "module": "dist/painter.es.js",
+  "main": "dist/lilith-painter.umd.js",
+  "module": "dist/lilith-painter.es.js",
   "typings": "dist/index.d.ts",
   "keywords": [
     "houdini",
@@ -20,13 +20,16 @@
     "url": "https://github.com/juergenie/lilith-painter"
   },
   "files": [
+    "license",
+    "tsconfig.json",
     "dist",
     "src"
   ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "publish": "npm run build && npm publish"
   },
   "devDependencies": {
     "@types/node": "^15.12.2",
