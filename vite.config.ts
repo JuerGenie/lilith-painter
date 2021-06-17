@@ -26,6 +26,7 @@ export default defineConfig({
       entry: resolve("src/index.ts"),
       name: "LilithPainter",
     },
+    sourcemap: true,
   },
   plugins: [
     dts({
