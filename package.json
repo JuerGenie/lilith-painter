@@ -2,11 +2,23 @@
   "name": "lilith-painter",
   "version": "0.1.0",
   "license": "Apache-2.0",
-  "author": "Juergenie Whang",
+  "author": {
+    "name": "Juergenie Whang",
+    "url": "https://github/juergenie",
+    "email": "juergenie@qq.com"
+  },
   "description": "Easy-utils for Paint API (Houdini APIs).",
   "main": "dist/painter.umd.js",
   "module": "dist/painter.es.js",
   "typings": "dist/index.d.ts",
+  "keywords": [
+    "houdini",
+    "paint",
+    "lilith painter"
+  ],
+  "repository": {
+    "url": "https://github.com/juergenie/lilith-painter"
+  },
   "files": [
     "dist",
     "src"
